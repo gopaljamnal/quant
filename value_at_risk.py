@@ -9,7 +9,7 @@ pd.set_option('display.max_colwidth', None)
 
 stocks = ['AAPL', 'WMT', 'TSLA', 'GE', 'AMZN', 'DB']
 
-start_date = '2012-01-01'
+start_date = '2016-01-01'
 end_date = '2017-01-01'
 
 NUM_TRADING_DAYS = 252
@@ -68,17 +68,6 @@ def calculate_var(position, c,mu, sigma):
     return var
 
 
-from newsapi import NewsApiClient
-
-newsapi = NewsApiClient(api_key=)
-
-## everything
-def get_news(newsapi):
-    all_articles =newsapi.get_everything(q='bitcoin', sources='bbc-news, the-verge', from_param="2025-01-01", to_param="2025-01-31", language='en', sort_by='relevance', page=2)
-    return all_articles
-
-# top headlines
-source = newsapi.get_sources()
 
 
 
